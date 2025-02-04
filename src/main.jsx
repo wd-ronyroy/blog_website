@@ -8,15 +8,16 @@ import './index.css'
 import Navbar from './component/Navbar.jsx'
 
 const router = createBrowserRouter([
+  
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Navbar />,
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-    <Navbar />
+    
   </StrictMode>,
 )
